@@ -75,6 +75,7 @@ as select dbo.calculateage(retiree_id) as age,* from Retiree
 
 
 ## Code
+## Login credentials User1/1234
 Login page:
 
 ![image](https://user-images.githubusercontent.com/78456642/236635142-a0168927-df3d-4f2f-aed0-32339ce32350.png)
