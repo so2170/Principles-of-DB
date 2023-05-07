@@ -71,6 +71,8 @@ from Retiree r inner join
 group by Retiree_id,YEAR(Paymentdate)) as p on r.Retiree_id = p.Retiree_id
 
 GO
+
+
 ------------SQL to create View using CalculateAge Function-------------------
 
 create view RetireeDetails
