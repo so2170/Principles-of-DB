@@ -78,6 +78,25 @@ GO
 create view RetireeDetails
 as select dbo.calculateage(retiree_id) as age,* from Retiree
 
+--------------SQL Function--------------------------------------
+
+CREATE FUNCTION [dbo].[CalculateAge]
+(
+    @RetireeId INT
+)
+RETURNS INT
+AS
+BEGIN
+    DECLARE @age INT;
+    select @age= DATEDIFF(YEAR, dateofbirth, GETDATE()) from retiree where Retiree_id = @RetireeId    
+   
+    
+    RETURN @age;
+END
+GO
+
+
+
 
 ## Code
 ## Login credentials User1/1234
